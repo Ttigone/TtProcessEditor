@@ -21,7 +21,7 @@ include(FetchContent)
 
 # ------ PROJECT INFO ------
 # Options
-set(PROJECT_NAME "PT" CACHE STRING "Project Name.") #You can change "ProjectTemplate" with your project name.
+set(PROJECT_NAME "TtProcessEditor" CACHE STRING "Project Name.") #You can change "ProjectTemplate" with your project name.
 set(PROJECT_TARGET ${PROJECT_NAME} CACHE STRING "Project Target Name.")
 
 set(PROJECT_VERSION_MAJOR 1)
@@ -39,7 +39,7 @@ if(NOT DEFINED CMAKE_CXX_STANDARD)
     set(CMAKE_CXX_EXTENSIONS ON)
 endif()
 
-set(PROJECT_CREATOR "Kambiz Asadzadeh" CACHE STRING "Creator of your project.") #Your project creator.
+set(PROJECT_CREATOR "C3H3_Ttigone" CACHE STRING "Creator of your project.") #Your project creator.
 
 set(PROJECT_LICENSE_TYPE "MIT" CACHE STRING "Project License Type.") #Your project license type.
 
@@ -76,7 +76,7 @@ set(DEVELOPER_BUNDLE_IDENTIFIER com.kambizasadzadeh.app.${PROJECT_NAME} CACHE ST
 set(PROJECT_DESCRIPTION "A concept mobile app UI/UX prototype based on Qt Quick technology." CACHE STRING "Project Description")
 
 #Your project website address.
-set(PROJECT_HOMEPAGE_URL "https://kambizasadzadeh.com" CACHE STRING "Project URL.")
+set(PROJECT_HOMEPAGE_URL "https://github.com/Ttigone/TtProcessEditor" CACHE STRING "Project URL.")
 
 #Project pre-configuration system.
 configure_file(
