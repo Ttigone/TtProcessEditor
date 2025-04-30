@@ -1,0 +1,4 @@
+module GraphView
+ConnectionLine 1.0 ConnectionLine.qml
+GraphEditor 1.0 GraphEditor.qml
+NodeItem 1.0 NodeItem.qml

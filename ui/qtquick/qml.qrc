@@ -2,4 +2,10 @@
     <qresource prefix="/ui">
         <file>main.qml</file>
     </qresource>
+    <qresource prefix="/Conponents">
+        <file>GraphView/ConnectionLine.qml</file>
+        <file>GraphView/GraphEditor.qml</file>
+        <file>GraphView/NodeItem.qml</file>
+        <file>GraphView/qmldir</file>
+    </qresource>
 </RCC>

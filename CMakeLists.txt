@@ -205,6 +205,8 @@ FOREACH(LETTER ${src_files})
   list(APPEND UI_QML_FILES ${fileList})
 ENDFOREACH()
 
+message(${UI_QML_FILES})
+
 file(GLOB CONFIGFILE config/${SUFFIX_CONFIG})
 
 file(GLOB SOURCESFILE
@@ -344,6 +346,12 @@ if(GUI_APPLICATION AND PROJECT_MAIN_TYPE STREQUAL "qt" OR PROJECT_MAIN_TYPE STRE
                     OUTPUT_DIRECTORY ""
                     QML_FILES ${UI_QML_FILES}
                 )
+                # set_property(TARGET ${PROJECT_NAME} APPEND PROPERTY
+                #     QT_QML_IMPORT_PATH "${CMAKE_SOURCE_DIR}/ui/qtquick/GraphView"
+                #     QT_QML_DESIGNER_IMPORT_PATH "${CMAKE_SOURCE_DIR}/ui/qtquick/GraphView"
+                # )
+                list(APPEND QML_IMPORT_PATH ${CMAKE_SOURCE_DIR}/ui/qtquick/GraphView)
+
                 endif()
             endif()
         endif()
